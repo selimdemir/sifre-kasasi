@@ -41,14 +41,19 @@ gerektirmez. Bağlantı ayarı gerekirse uygulama kendi ayar penceresini açar
 2. Bu şifre hem girişte sorulur hem de kayıtlarınızın şifrelenme anahtarıdır.
    **Unutulursa kayıtlar kurtarılamaz — mutlaka not alın.**
 
-## Güncelleme (yeni sürüm kurma)
+## Güncelleme
 
-1. [Releases](https://github.com/selimdemir/sifre-kasasi/releases) sayfasından
-   yeni sürümün iki dosyasını indirin.
-2. Uygulama kapalıyken eski `SifreKasasi.exe` ve `SifreKasasi.exe.config`
-   dosyalarının üzerine yeni dosyaları kopyalayın.
-3. Programı açın — kayıtlarınız aynen yerinde kalır (veriler veritabanında
-   saklandığı için exe'yi değiştirmek onlara dokunmaz).
+Program her açılışta (günde bir kez) sessizce yeni sürüm kontrolü yapar.
+
+- Yeni sürüm yayınlandığında açılışta **"YENİ SÜRÜM VAR"** penceresi çıkar →
+  **Evet** deyin; program yeni sürümü indirip kurar ve yeniden başlar.
+  Verileriniz, ayarlarınız ve yedekleriniz etkilenmez.
+- Dilediğiniz an *İşlemler → Güncelleme Kontrol Et…* ile elle de kontrol edebilirsiniz.
+- İnternet yoksa program normal çalışmaya devam eder.
+
+İsterseniz eski yöntemle de güncelleyebilirsiniz: Releases sayfasından
+`SifreKasasi.exe` + `SifreKasasi.exe.config` dosyalarını indirip, uygulama
+kapalıyken eskilerinin üzerine kopyalayın.
 
 ## Yedekleme
 
